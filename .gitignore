@@ -39,6 +39,7 @@
 *.suo
 *.ncb
 *.user
+*.sdf
 Debug/
 Release/
 x64/

@@ -50,7 +50,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\;..\extras"
+				AdditionalIncludeDirectories="..\source\;..\extras"
 				PreprocessorDefinitions="_WIN32;WIN32;_DEBUG;_CONSOLE;__ICL;__STDC_LIMIT_MACROS;HAVE_CONFIG_H"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -131,7 +131,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\;..\extras"
+				AdditionalIncludeDirectories="..\source\;..\extras"
 				PreprocessorDefinitions="_WIN32;WIN32;_DEBUG;_CONSOLE;__ICL;__STDC_LIMIT_MACROS;HAVE_CONFIG_H"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -211,7 +211,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="..\;..\extras"
+				AdditionalIncludeDirectories="..\source\;..\extras"
 				PreprocessorDefinitions="_WIN32;WIN32;_DEBUG;_CONSOLE;__ICL;__STDC_LIMIT_MACROS;HAVE_CONFIG_H"
 				RuntimeLibrary="2"
 				UsePrecompiledHeader="0"
@@ -292,7 +292,7 @@
 			/>
 			<Tool
 				Name="VCCLCompilerTool"
-				AdditionalIncludeDirectories="..\;..\extras"
+				AdditionalIncludeDirectories="..\source\;..\extras"
 				PreprocessorDefinitions="_WIN32;WIN32;_DEBUG;_CONSOLE;__ICL;__STDC_LIMIT_MACROS;HAVE_CONFIG_H"
 				RuntimeLibrary="2"
 				UsePrecompiledHeader="0"
@@ -354,70 +354,70 @@
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
 			<File
-				RelativePath="..\x264.cpp"
+				RelativePath="..\source\x264.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\x264.h"
+				RelativePath="..\source\x264.h"
 				>
 			</File>
 			<Filter
 				Name="encoder"
 				>
 				<File
-					RelativePath="..\encoder\analyse.cpp"
+					RelativePath="..\source\encoder\analyse.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\analyse.h"
+					RelativePath="..\source\encoder\analyse.h"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\cabac.cpp"
+					RelativePath="..\source\encoder\cabac.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\cavlc.cpp"
+					RelativePath="..\source\encoder\cavlc.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\encoder.cpp"
+					RelativePath="..\source\encoder\encoder.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\lookahead.cpp"
+					RelativePath="..\source\encoder\lookahead.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\macroblock.cpp"
+					RelativePath="..\source\encoder\macroblock.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\macroblock.h"
+					RelativePath="..\source\encoder\macroblock.h"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\me.cpp"
+					RelativePath="..\source\encoder\me.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\me.h"
+					RelativePath="..\source\encoder\me.h"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\ratecontrol.cpp"
+					RelativePath="..\source\encoder\ratecontrol.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\ratecontrol.h"
+					RelativePath="..\source\encoder\ratecontrol.h"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\set.cpp"
+					RelativePath="..\source\encoder\set.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\encoder\set.h"
+					RelativePath="..\source\encoder\set.h"
 					>
 				</File>
 			</Filter>
@@ -425,103 +425,15 @@
 				Name="common"
 				>
 				<File
-					RelativePath="..\common\bitstream.cpp"
+					RelativePath="..\source\common\bitstream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\common\bitstream.h"
+					RelativePath="..\source\common\bitstream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\cabac.cpp"
-					>
-					<FileConfiguration
-						Name="Debug|Win32"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-							ObjectFile="$(IntDir)\$(InputName)1.obj"
-							XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Debug|x64"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-							ObjectFile="$(IntDir)\$(InputName)1.obj"
-							XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Release|Win32"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-							ObjectFile="$(IntDir)\$(InputName)1.obj"
-							XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
-						/>
-					</FileConfiguration>
-					<FileConfiguration
-						Name="Release|x64"
-						>
-						<Tool
-							Name="VCCLCompilerTool"
-							ObjectFile="$(IntDir)\$(InputName)1.obj"
-							XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
-						/>
-					</FileConfiguration>
-				</File>
-				<File
-					RelativePath="..\common\cabac.h"
-					>
-				</File>
-				<File
-					RelativePath="..\common\common.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\common\common.h"
-					>
-				</File>
-				<File
-					RelativePath="..\common\common_common.h"
-					>
-				</File>
-				<File
-					RelativePath="..\common\cpu.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\common\cpu.h"
-					>
-				</File>
-				<File
-					RelativePath="..\common\dct.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\common\dct.h"
-					>
-				</File>
-				<File
-					RelativePath="..\common\deblock.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\common\display.h"
-					>
-				</File>
-				<File
-					RelativePath="..\common\frame.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\common\frame.h"
-					>
-				</File>
-				<File
-					RelativePath="..\common\macroblock.cpp"
+					RelativePath="..\source\common\cabac.cpp"
 					>
 					<FileConfiguration
 						Name="Debug|Win32"
@@ -561,63 +473,55 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\common\macroblock.h"
+					RelativePath="..\source\common\cabac.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\mc.cpp"
+					RelativePath="..\source\common\common.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\common\mc.h"
+					RelativePath="..\source\common\common.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\mvpred.cpp"
+					RelativePath="..\source\common\common_common.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\osdep.cpp"
+					RelativePath="..\source\common\cpu.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\common\osdep.h"
+					RelativePath="..\source\common\cpu.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\pixel.cpp"
+					RelativePath="..\source\common\dct.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\common\pixel.h"
+					RelativePath="..\source\common\dct.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\predict.cpp"
+					RelativePath="..\source\common\deblock.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\common\predict.h"
+					RelativePath="..\source\common\display.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\quant.cpp"
+					RelativePath="..\source\common\frame.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\common\quant.h"
+					RelativePath="..\source\common\frame.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\rectangle.cpp"
-					>
-				</File>
-				<File
-					RelativePath="..\common\rectangle.h"
-					>
-				</File>
-				<File
-					RelativePath="..\common\set.cpp"
+					RelativePath="..\source\common\macroblock.cpp"
 					>
 					<FileConfiguration
 						Name="Debug|Win32"
@@ -657,31 +561,127 @@
 					</FileConfiguration>
 				</File>
 				<File
-					RelativePath="..\common\set.h"
+					RelativePath="..\source\common\macroblock.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\threadpool.cpp"
+					RelativePath="..\source\common\mc.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\common\threadpool.h"
+					RelativePath="..\source\common\mc.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\visualize.h"
+					RelativePath="..\source\common\mvpred.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\common\vlc.cpp"
+					RelativePath="..\source\common\osdep.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\common\win32thread.cpp"
+					RelativePath="..\source\common\osdep.h"
 					>
 				</File>
 				<File
-					RelativePath="..\common\win32thread.h"
+					RelativePath="..\source\common\pixel.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\pixel.h"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\predict.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\predict.h"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\quant.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\quant.h"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\rectangle.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\rectangle.h"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\set.cpp"
+					>
+					<FileConfiguration
+						Name="Debug|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							ObjectFile="$(IntDir)\$(InputName)1.obj"
+							XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Debug|x64"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							ObjectFile="$(IntDir)\$(InputName)1.obj"
+							XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|Win32"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							ObjectFile="$(IntDir)\$(InputName)1.obj"
+							XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+						/>
+					</FileConfiguration>
+					<FileConfiguration
+						Name="Release|x64"
+						>
+						<Tool
+							Name="VCCLCompilerTool"
+							ObjectFile="$(IntDir)\$(InputName)1.obj"
+							XMLDocumentationFileName="$(IntDir)\$(InputName)1.xdc"
+						/>
+					</FileConfiguration>
+				</File>
+				<File
+					RelativePath="..\source\common\set.h"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\threadpool.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\threadpool.h"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\visualize.h"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\vlc.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\win32thread.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\source\common\win32thread.h"
 					>
 				</File>
 			</Filter>
@@ -689,27 +689,27 @@
 				Name="input"
 				>
 				<File
-					RelativePath="..\input\input.cpp"
+					RelativePath="..\source\input\input.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\input\input.h"
+					RelativePath="..\source\input\input.h"
 					>
 				</File>
 				<File
-					RelativePath="..\input\raw.cpp"
+					RelativePath="..\source\input\raw.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\input\thread.cpp"
+					RelativePath="..\source\input\thread.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\input\timecode.cpp"
+					RelativePath="..\source\input\timecode.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\input\y4m.cpp"
+					RelativePath="..\source\input\y4m.cpp"
 					>
 				</File>
 			</Filter>
@@ -717,35 +717,35 @@
 				Name="output"
 				>
 				<File
-					RelativePath="..\output\flv.cpp"
+					RelativePath="..\source\output\flv.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\output\flv_bytestream.cpp"
+					RelativePath="..\source\output\flv_bytestream.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\output\flv_bytestream.h"
+					RelativePath="..\source\output\flv_bytestream.h"
 					>
 				</File>
 				<File
-					RelativePath="..\output\matroska.cpp"
+					RelativePath="..\source\output\matroska.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\output\matroska_ebml.cpp"
+					RelativePath="..\source\output\matroska_ebml.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\output\matroska_ebml.h"
+					RelativePath="..\source\output\matroska_ebml.h"
 					>
 				</File>
 				<File
-					RelativePath="..\output\output.h"
+					RelativePath="..\source\output\output.h"
 					>
 				</File>
 				<File
-					RelativePath="..\output\raw.cpp"
+					RelativePath="..\source\output\raw.cpp"
 					>
 					<FileConfiguration
 						Name="Debug|Win32"
@@ -789,55 +789,55 @@
 				Name="filters"
 				>
 				<File
-					RelativePath="..\filters\video\cache.cpp"
+					RelativePath="..\source\filters\video\cache.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\video\crop.cpp"
+					RelativePath="..\source\filters\video\crop.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\video\depth.cpp"
+					RelativePath="..\source\filters\video\depth.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\filters.cpp"
+					RelativePath="..\source\filters\filters.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\filters.h"
+					RelativePath="..\source\filters\filters.h"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\video\fix_vfr_pts.cpp"
+					RelativePath="..\source\filters\video\fix_vfr_pts.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\video\internal.cpp"
+					RelativePath="..\source\filters\video\internal.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\video\internal.h"
+					RelativePath="..\source\filters\video\internal.h"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\video\resize.cpp"
+					RelativePath="..\source\filters\video\resize.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\video\select_every.cpp"
+					RelativePath="..\source\filters\video\select_every.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\video\source.cpp"
+					RelativePath="..\source\filters\video\source.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\video\video.cpp"
+					RelativePath="..\source\filters\video\video.cpp"
 					>
 				</File>
 				<File
-					RelativePath="..\filters\video\video.h"
+					RelativePath="..\source\filters\video\video.h"
 					>
 				</File>
 			</Filter>
@@ -845,23 +845,23 @@
 				Name="extra"
 				>
 				<File
-					RelativePath="..\extras\avisynth_c.h"
+					RelativePath="..\source\extras\avisynth_c.h"
 					>
 				</File>
 				<File
-					RelativePath="..\extras\getopt.c"
+					RelativePath="..\source\extras\getopt.c"
 					>
 				</File>
 				<File
-					RelativePath="..\extras\getopt.h"
+					RelativePath="..\source\extras\getopt.h"
 					>
 				</File>
 				<File
-					RelativePath="..\extras\inttypes.h"
+					RelativePath="..\source\extras\inttypes.h"
 					>
 				</File>
 				<File
-					RelativePath="..\extras\stdint.h"
+					RelativePath="..\source\extras\stdint.h"
 					>
 				</File>
 			</Filter>

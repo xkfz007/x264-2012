@@ -1,300 +1,279 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Source Files\encoder">
-      <UniqueIdentifier>{fe054e35-8c19-4e10-bcce-f199da719688}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\common">
+    <Filter Include="common">
       <UniqueIdentifier>{349b9164-893e-4be2-b4d3-78e3d6ffaf3f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\input">
-      <UniqueIdentifier>{b20ba399-e4d8-4125-9edc-2ce10b975b8c}</UniqueIdentifier>
+    <Filter Include="encoder">
+      <UniqueIdentifier>{fe054e35-8c19-4e10-bcce-f199da719688}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\output">
-      <UniqueIdentifier>{23e1321f-0236-4d1f-aea4-114c3a2f9f84}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\filters">
-      <UniqueIdentifier>{1187f1ac-b46a-4f95-b005-87fa5b417ed7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\extra">
+    <Filter Include="extra">
       <UniqueIdentifier>{bbf42e2b-9a9b-4103-97c1-e3f5c4ba0b57}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    <Filter Include="filters">
+      <UniqueIdentifier>{1187f1ac-b46a-4f95-b005-87fa5b417ed7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    <Filter Include="input">
+      <UniqueIdentifier>{b20ba399-e4d8-4125-9edc-2ce10b975b8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="output">
+      <UniqueIdentifier>{23e1321f-0236-4d1f-aea4-114c3a2f9f84}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\x264.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\source\encoder\analyse.cpp">
+      <Filter>encoder</Filter>
     </ClCompile>
-    <ClCompile Include="..\encoder\analyse.cpp">
-      <Filter>Source Files\encoder</Filter>
+    <ClCompile Include="..\source\encoder\cabac.cpp">
+      <Filter>encoder</Filter>
     </ClCompile>
-    <ClCompile Include="..\encoder\cabac.cpp">
-      <Filter>Source Files\encoder</Filter>
+    <ClCompile Include="..\source\encoder\cavlc.cpp">
+      <Filter>encoder</Filter>
     </ClCompile>
-    <ClCompile Include="..\encoder\cavlc.cpp">
-      <Filter>Source Files\encoder</Filter>
+    <ClCompile Include="..\source\encoder\encoder.cpp">
+      <Filter>encoder</Filter>
     </ClCompile>
-    <ClCompile Include="..\encoder\encoder.cpp">
-      <Filter>Source Files\encoder</Filter>
+    <ClCompile Include="..\source\encoder\lookahead.cpp">
+      <Filter>encoder</Filter>
     </ClCompile>
-    <ClCompile Include="..\encoder\lookahead.cpp">
-      <Filter>Source Files\encoder</Filter>
+    <ClCompile Include="..\source\encoder\macroblock.cpp">
+      <Filter>encoder</Filter>
     </ClCompile>
-    <ClCompile Include="..\encoder\macroblock.cpp">
-      <Filter>Source Files\encoder</Filter>
+    <ClCompile Include="..\source\encoder\me.cpp">
+      <Filter>encoder</Filter>
     </ClCompile>
-    <ClCompile Include="..\encoder\me.cpp">
-      <Filter>Source Files\encoder</Filter>
+    <ClCompile Include="..\source\encoder\ratecontrol.cpp">
+      <Filter>encoder</Filter>
     </ClCompile>
-    <ClCompile Include="..\encoder\ratecontrol.cpp">
-      <Filter>Source Files\encoder</Filter>
+    <ClCompile Include="..\source\encoder\set.cpp">
+      <Filter>encoder</Filter>
     </ClCompile>
-    <ClCompile Include="..\encoder\set.cpp">
-      <Filter>Source Files\encoder</Filter>
+    <ClCompile Include="..\source\common\bitstream.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\bitstream.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\cabac.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\cabac.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\common.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\common.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\cpu.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\cpu.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\dct.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\dct.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\deblock.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\deblock.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\frame.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\frame.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\macroblock.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\macroblock.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\mc.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\mc.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\mvpred.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\mvpred.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\osdep.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\osdep.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\pixel.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\pixel.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\predict.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\predict.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\quant.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\quant.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\rectangle.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\rectangle.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\set.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\set.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\threadpool.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\threadpool.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\vlc.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\vlc.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\common\win32thread.cpp">
+      <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\win32thread.cpp">
-      <Filter>Source Files\common</Filter>
+    <ClCompile Include="..\source\input\input.cpp">
+      <Filter>input</Filter>
     </ClCompile>
-    <ClCompile Include="..\input\input.cpp">
-      <Filter>Source Files\input</Filter>
+    <ClCompile Include="..\source\input\raw.cpp">
+      <Filter>input</Filter>
     </ClCompile>
-    <ClCompile Include="..\input\raw.cpp">
-      <Filter>Source Files\input</Filter>
+    <ClCompile Include="..\source\input\thread.cpp">
+      <Filter>input</Filter>
     </ClCompile>
-    <ClCompile Include="..\input\thread.cpp">
-      <Filter>Source Files\input</Filter>
+    <ClCompile Include="..\source\input\timecode.cpp">
+      <Filter>input</Filter>
     </ClCompile>
-    <ClCompile Include="..\input\timecode.cpp">
-      <Filter>Source Files\input</Filter>
+    <ClCompile Include="..\source\input\y4m.cpp">
+      <Filter>input</Filter>
     </ClCompile>
-    <ClCompile Include="..\input\y4m.cpp">
-      <Filter>Source Files\input</Filter>
+    <ClCompile Include="..\source\output\flv.cpp">
+      <Filter>output</Filter>
     </ClCompile>
-    <ClCompile Include="..\output\flv.cpp">
-      <Filter>Source Files\output</Filter>
+    <ClCompile Include="..\source\output\flv_bytestream.cpp">
+      <Filter>output</Filter>
     </ClCompile>
-    <ClCompile Include="..\output\flv_bytestream.cpp">
-      <Filter>Source Files\output</Filter>
+    <ClCompile Include="..\source\output\matroska.cpp">
+      <Filter>output</Filter>
     </ClCompile>
-    <ClCompile Include="..\output\matroska.cpp">
-      <Filter>Source Files\output</Filter>
+    <ClCompile Include="..\source\output\matroska_ebml.cpp">
+      <Filter>output</Filter>
     </ClCompile>
-    <ClCompile Include="..\output\matroska_ebml.cpp">
-      <Filter>Source Files\output</Filter>
+    <ClCompile Include="..\source\output\raw.cpp">
+      <Filter>output</Filter>
     </ClCompile>
-    <ClCompile Include="..\output\raw.cpp">
-      <Filter>Source Files\output</Filter>
+    <ClCompile Include="..\source\filters\video\cache.cpp">
+      <Filter>filters</Filter>
     </ClCompile>
-    <ClCompile Include="..\filters\video\cache.cpp">
-      <Filter>Source Files\filters</Filter>
+    <ClCompile Include="..\source\filters\video\crop.cpp">
+      <Filter>filters</Filter>
     </ClCompile>
-    <ClCompile Include="..\filters\video\crop.cpp">
-      <Filter>Source Files\filters</Filter>
+    <ClCompile Include="..\source\filters\video\depth.cpp">
+      <Filter>filters</Filter>
     </ClCompile>
-    <ClCompile Include="..\filters\video\depth.cpp">
-      <Filter>Source Files\filters</Filter>
+    <ClCompile Include="..\source\filters\filters.cpp">
+      <Filter>filters</Filter>
     </ClCompile>
-    <ClCompile Include="..\filters\filters.cpp">
-      <Filter>Source Files\filters</Filter>
+    <ClCompile Include="..\source\filters\video\fix_vfr_pts.cpp">
+      <Filter>filters</Filter>
     </ClCompile>
-    <ClCompile Include="..\filters\video\fix_vfr_pts.cpp">
-      <Filter>Source Files\filters</Filter>
+    <ClCompile Include="..\source\filters\video\internal.cpp">
+      <Filter>filters</Filter>
     </ClCompile>
-    <ClCompile Include="..\filters\video\internal.cpp">
-      <Filter>Source Files\filters</Filter>
+    <ClCompile Include="..\source\filters\video\resize.cpp">
+      <Filter>filters</Filter>
     </ClCompile>
-    <ClCompile Include="..\filters\video\resize.cpp">
-      <Filter>Source Files\filters</Filter>
+    <ClCompile Include="..\source\filters\video\select_every.cpp">
+      <Filter>filters</Filter>
     </ClCompile>
-    <ClCompile Include="..\filters\video\select_every.cpp">
-      <Filter>Source Files\filters</Filter>
+    <ClCompile Include="..\source\filters\video\source.cpp">
+      <Filter>filters</Filter>
     </ClCompile>
-    <ClCompile Include="..\filters\video\source.cpp">
-      <Filter>Source Files\filters</Filter>
+    <ClCompile Include="..\source\filters\video\video.cpp">
+      <Filter>filters</Filter>
     </ClCompile>
-    <ClCompile Include="..\filters\video\video.cpp">
-      <Filter>Source Files\filters</Filter>
+    <ClCompile Include="..\source\extras\getopt.c">
+      <Filter>extra</Filter>
     </ClCompile>
-    <ClCompile Include="..\extras\getopt.c">
-      <Filter>Source Files\extra</Filter>
-    </ClCompile>
+    <ClCompile Include="..\source\x264.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\x264.h">
-      <Filter>Source Files</Filter>
+    <ClInclude Include="..\source\encoder\analyse.h">
+      <Filter>encoder</Filter>
     </ClInclude>
-    <ClInclude Include="..\encoder\analyse.h">
-      <Filter>Source Files\encoder</Filter>
+    <ClInclude Include="..\source\encoder\macroblock.h">
+      <Filter>encoder</Filter>
     </ClInclude>
-    <ClInclude Include="..\encoder\macroblock.h">
-      <Filter>Source Files\encoder</Filter>
+    <ClInclude Include="..\source\encoder\me.h">
+      <Filter>encoder</Filter>
     </ClInclude>
-    <ClInclude Include="..\encoder\me.h">
-      <Filter>Source Files\encoder</Filter>
+    <ClInclude Include="..\source\encoder\ratecontrol.h">
+      <Filter>encoder</Filter>
     </ClInclude>
-    <ClInclude Include="..\encoder\ratecontrol.h">
-      <Filter>Source Files\encoder</Filter>
+    <ClInclude Include="..\source\encoder\set.h">
+      <Filter>encoder</Filter>
     </ClInclude>
-    <ClInclude Include="..\encoder\set.h">
-      <Filter>Source Files\encoder</Filter>
+    <ClInclude Include="..\source\common\bitstream.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\bitstream.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\cabac.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\cabac.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\common.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\common.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\cpu.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\cpu.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\dct.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\dct.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\display.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\display.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\frame.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\frame.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\macroblock.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\macroblock.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\mc.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\mc.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\osdep.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\osdep.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\pixel.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\pixel.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\predict.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\predict.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\quant.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\quant.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\rectangle.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\rectangle.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\set.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\set.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\threadpool.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\threadpool.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\visualize.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\visualize.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\common\win32thread.h">
+      <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\common\win32thread.h">
-      <Filter>Source Files\common</Filter>
+    <ClInclude Include="..\source\input\input.h">
+      <Filter>input</Filter>
     </ClInclude>
-    <ClInclude Include="..\input\input.h">
-      <Filter>Source Files\input</Filter>
+    <ClInclude Include="..\source\output\flv_bytestream.h">
+      <Filter>output</Filter>
     </ClInclude>
-    <ClInclude Include="..\output\flv_bytestream.h">
-      <Filter>Source Files\output</Filter>
+    <ClInclude Include="..\source\output\matroska_ebml.h">
+      <Filter>output</Filter>
     </ClInclude>
-    <ClInclude Include="..\output\matroska_ebml.h">
-      <Filter>Source Files\output</Filter>
+    <ClInclude Include="..\source\output\output.h">
+      <Filter>output</Filter>
     </ClInclude>
-    <ClInclude Include="..\output\output.h">
-      <Filter>Source Files\output</Filter>
+    <ClInclude Include="..\source\filters\filters.h">
+      <Filter>filters</Filter>
     </ClInclude>
-    <ClInclude Include="..\filters\filters.h">
-      <Filter>Source Files\filters</Filter>
+    <ClInclude Include="..\source\filters\video\internal.h">
+      <Filter>filters</Filter>
     </ClInclude>
-    <ClInclude Include="..\filters\video\internal.h">
-      <Filter>Source Files\filters</Filter>
+    <ClInclude Include="..\source\filters\video\video.h">
+      <Filter>filters</Filter>
     </ClInclude>
-    <ClInclude Include="..\filters\video\video.h">
-      <Filter>Source Files\filters</Filter>
+    <ClInclude Include="..\source\extras\avisynth_c.h">
+      <Filter>extra</Filter>
     </ClInclude>
-    <ClInclude Include="..\extras\avisynth_c.h">
-      <Filter>Source Files\extra</Filter>
+    <ClInclude Include="..\source\extras\getopt.h">
+      <Filter>extra</Filter>
     </ClInclude>
-    <ClInclude Include="..\extras\getopt.h">
-      <Filter>Source Files\extra</Filter>
+    <ClInclude Include="..\source\extras\inttypes.h">
+      <Filter>extra</Filter>
     </ClInclude>
-    <ClInclude Include="..\extras\inttypes.h">
-      <Filter>Source Files\extra</Filter>
+    <ClInclude Include="..\source\extras\stdint.h">
+      <Filter>extra</Filter>
     </ClInclude>
-    <ClInclude Include="..\extras\stdint.h">
-      <Filter>Source Files\extra</Filter>
-    </ClInclude>
-    <ClInclude Include="..\config.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ReadMe.txt" />
+    <ClInclude Include="..\source\x264.h" />
+    <ClInclude Include="..\source\config.h" />
   </ItemGroup>
 </Project>
